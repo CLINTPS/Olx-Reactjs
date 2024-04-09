@@ -14,7 +14,7 @@ const AddProduct = () => {
 
   const navigate = useNavigate();
   const user = useContext(AuthContext);
-  const notify = () => toast.success("successfully added the product");
+  const notify = () => toast.success("successfully added your product");
 
   const [productNameState, setProductNameState] = useState(false);
   const [categoryState, setCategoryState] = useState(false);
@@ -124,13 +124,13 @@ const AddProduct = () => {
 
   return (
     <>
-      <div className="container mx-auto pt-20">
-        <h2 className="text-2xl font-bold mb-4">Add Product</h2>
+      <div className="container mx-auto pt-24">
+        <h2 className="text-2xl font-bold mb-4 text-center">Add New Product</h2>
         <form onSubmit={handleSubmit} className="max-w-md mx-auto">
-          <div className="mb-4">
+          <div className="mb-5">
             <label
               htmlFor="productName"
-              className="block text-sm font-medium text-gray-600"
+              className="block text-sm font-medium text-gray-700"
             >
               Product Name
             </label>
